@@ -34,6 +34,12 @@ CIFAR-10 contains:
 
 The dataset is automatically downloaded using `torchvision.datasets.CIFAR10`.
 
+### CIFAR-10 Dataset Samples
+
+The following image shows examples from the CIFAR-10 dataset used in this project.
+
+![CIFAR-10 Dataset](Images/Dataset.png)
+
 ## Data Preprocessing
 
 The training and test datasets are transformed using PyTorch's `torchvision.transforms`.
@@ -125,12 +131,19 @@ During training, the following quantities are recorded for every epoch:
 * Training accuracy
 * Test accuracy
 
-The results are then visualized using Matplotlib.
+The results are visualized using Matplotlib.
 
-Two plots are generated:
+### Loss vs. Epoch
 
-1. **Training and test loss vs. epoch**
-2. **Training and test accuracy vs. epoch**
+The following figure shows the training and test loss throughout the training process.
+
+![Loss vs Epoch](Images/Loss_vs_Epoch.png)
+
+### Accuracy vs. Epoch
+
+The following figure shows the training and test accuracy throughout the training process.
+
+![Accuracy vs Epoch](Images/Accurace_vs_Epoch.png)
 
 These plots help evaluate the learning process and identify potential overfitting or underfitting.
 
@@ -182,6 +195,20 @@ Training with Adam
 Model Evaluation
        ↓
 Loss & Accuracy Visualization
+```
+
+## Project Structure
+
+```text
+CNN-Image-Classification/
+│
+├── your_script.py
+├── README.md
+│
+└── Images/
+    ├── Dataset.png
+    ├── Loss_vs_Epoch.png
+    └── Accurace_vs_Epoch.png
 ```
 
 ## Technologies
